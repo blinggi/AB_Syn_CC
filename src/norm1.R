@@ -8,8 +8,8 @@
 require("DESeq")
 # remove duplicate row names, DEseq will not work otherwise *may check for loss of interesting genes
 
-parse1.output.no.dups = parse1.output[!(duplicated(row.names(parse1.output))),]
-CountTable = parse1.output.no.dups
+# do no need : parse1.output.no.dups = parse1.output[!(duplicated(row.names(parse1.output))),]
+CountTable = xls_import.output
 conditions = colnames(CountTable)
 cds= newCountDataSet(floor(CountTable),conditions) 
 cds=estimateSizeFactors(cds)

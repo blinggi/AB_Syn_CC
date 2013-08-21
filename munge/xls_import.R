@@ -3,8 +3,8 @@
 # output : 'xls.output' dataframe with a column for each condition, rownames for gene id
 require("XLConnect")
 # get names of xlsx files in data folder to process. 
-
-xls.files = list.files(pattern='*.xlsx')
+setwd('/Volumes/Documents/R_onAir/Belieav_RNA_Rproj/Syn_CC_Belieav_RNA_projtemp  /data')
+xls.files = list.files(pattern='xlsx')
 
 # loop through files, get data out and export as dataframe
 for (j in 1:length(xls.files)){

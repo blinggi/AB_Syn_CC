@@ -4,8 +4,9 @@
 # output: write a .csv file with date'workflow.output'. has fold changes of all combos (no cuttoff), with annotations. .#
 #   This file will be in the "output" folder and will need to be polished and then put in "report" folder
 
-#setwd('/Volumes/Documents/R_onAir/Belieav_RNA_Rproj//Belieav_RNA_projtemp')
+setwd('/Volumes/Documents/R_onAir/Belieav_RNA_Rproj/Syn_CC_Belieav_RNA_projtemp  /')
 load.project()
+setwd('/Volumes/Documents/R_onAir/Belieav_RNA_Rproj/Syn_CC_Belieav_RNA_projtemp  /')
 source('./src/norm1.R')
 source('./src/fold_change.R')
 source('./src/annotate.R')
