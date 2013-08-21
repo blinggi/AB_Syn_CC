@@ -1,7 +1,8 @@
 # Linggi, Aug 1,2013
+# updated: Aug21,2013
 # normalize RNA-seq data using DE-Seq Package
 
-#input:  ('parse1_output'): file with columns for each condition, row.names as genes.
+#input:  ('xls_import.output'): file with columns for each condition, row.names as genes.
 #output: "norm1_output":  normalized data
 
 require("DESeq")

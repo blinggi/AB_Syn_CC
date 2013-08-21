@@ -24,14 +24,41 @@ do fold change calc. then add annotations. need to make any zero value to .1
 finished all. 
 Summary
 final R output is put in "output" folder. This will require some polishing.
-polishing: get rid of data with no IDs
-show less decimals
-color code sections
-add cover sheet
-add spaces and justifications to make pretty
+1. rename with "Report' then date
+1.5 save in Reports folder as .xls
+2. polishing: get rid of data with no IDs
+3. show less decimals
+4. color code sections
+5. add cover sheet
+6. add spaces and justifications to make pretty
 (fixed the way the data was divided a couple of places in fold.chage.R code)
 _______________________
 
 wrote some code to filter based on total counts (to get rid of low count genes) and also to see only genes that are regulated 2 fold or more (+/-) in at least 1 comparison.
 so far this is just an add on to already outputted data, but could put it in workflow easily.
 is called 'filter.R'
+------------------------
+8/19/13- copied project from Belieav_RNA_proj_temp to here to adapt for diff organism
+
+have new dataset to analyze 
+
+these are syn7002 data, so need to use diff annotations.
+first save .xls file. then split into csv for each sheet in .xls file.
+need to match names up also, num to sample conditions
+Beleav_080213_AB_3_1_Highlight_highO2.csv
+Beleav_080213_AB_3_2_lowlight_highO2.csv
+Beleav_080213_AB_3_3_lowlight_lowO2.csv
+Beleav_080213_AB_3_4_HighLight_low02.csv
+Beleav_080213_meng.xlsx--original
+
+fixed all places that were specific to this dataset. At some point would be nice to automate that part. Would need to read in file names and carry the labels around.
+
+_________________
+8/20/13
+copied this project from Belieav_syn.. project to use for analysis of Syn data in coculture conditions.
+use .xlsx files for data import, utilize xlsconnect
+create munge code 'xls_import'
+works good to parse each .xlsx file. next will need to fit into normalization workflow
+
+
+
